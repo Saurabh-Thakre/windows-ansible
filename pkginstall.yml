@@ -1,0 +1,13 @@
+---
+- name: Installing packages
+  hosts: win
+  tasks:
+  - name: Installing packages
+    win_chocolatey:
+      name: "{{ item }}"
+      state: present
+    with_items:
+      - winrar
+      - firefox
+      - git
+

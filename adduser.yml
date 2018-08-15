@@ -1,0 +1,8 @@
+---
+- hosts: win
+  tasks:
+  - name: Managing users
+    win_user:
+      name: Ansiwin
+      password: ansiwinsi
+      state: present
