@@ -1,11 +1,4 @@
 [win]
-192.168.1.2 #hostIP
-servera     #hostname
-
-[win:vars]
-ansible_user: Administrator
-ansible_password: winansible
-ansible_port: 5986
-ansible_connection: winrm
-ansible_winrm_server_cert_validation: ignore
-
+192.168.122.172 #IP Address
+#Or Hostname
+servera
